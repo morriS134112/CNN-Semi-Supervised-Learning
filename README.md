@@ -6,19 +6,12 @@
 - Model4驗證集準確率：82%
 - 在Kaggle上Model1測試集準確率：80%
 - 在Kaggle上Model4測試集準確率：82.5%
+- 在Kaggle上Model5測試集準確率：83%
 
 * Run `Model1.ipynb`, `Model4.ipynb`, respectively.
 
-This will generate `model1.ckpt`, `model4.ckpt` and the corresponding predictions `model1.csv`,  `model4.csv`. Note that you must execute these models orderly, since some model is retrained from previous models using unlabeled data (semi-supervised). 
+This will generate `model1.ckpt`, `model4.ckpt` . Note that you must execute these models orderly, since some model is retrained from previous models using unlabeled data (semi-supervised). 
 
-* Run `Ensemble1.ipynb`.
+* Run `Ensemble.ipynb`.
 
-This will ensemble model1, model4 by voting. The resulting predictions are saved in `Ensemble1.csv`.
-
-* Run `Ensemble2.ipynb`.
-
-This will ensemble model1, model4 by fusion (averaged output from all models). The resulting predictions are saved in `Ensemble2.csv`.
-
-* Run `Ensemble3.ipynb`.
-
-This will ensemble Ensemble1,Ensemble2 by voting. The resulting predictions are saved in `Ensemble3.csv`.
+This will ensemble model1, model4 by voting. The resulting are saved in `model5.ckpt`.
